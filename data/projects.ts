@@ -9,7 +9,7 @@ export interface Project {
   title: string;
   category: string;
   description: string;
-  longDescription: string;
+  longDescription: string[];
   technologies: string[];
   features: string[];
   architecture: string[];

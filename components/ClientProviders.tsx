@@ -1,8 +1,19 @@
 "use client";
 
 import type { ReactNode } from "react";
-import { ProjectManagerProvider } from "@/components/admin/ProjectManager";
+import { LanguageProvider } from "@/components/LanguageProvider";
+import { ThemeProvider } from "@/components/ThemeProvider";
 
-export function ClientProviders({ children }: { children: ReactNode }) {
-  return <ProjectManagerProvider>{children}</ProjectManagerProvider>;
+export function ClientProviders({
+  children,
+}: {
+  children: ReactNode;
+}) {
+  return (
+    <ThemeProvider>
+      <LanguageProvider>
+        {children}
+      </LanguageProvider>
+    </ThemeProvider>
+  );
 }

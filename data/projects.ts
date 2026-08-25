@@ -106,11 +106,7 @@ export const projects: Project[] = [
         alt: "Modern E-Commerce Platform homepage",
         caption: "Modern responsive e-commerce homepage",
       },
-      {
-        src: "/portfolio/projects/online-shop/homepagefull.png",
-        alt: "E-Commerce homepage full screen",
-        caption: "Full-screen homepage showcase",
-      },
+ 
       {
         src: "/portfolio/projects/online-shop/home1.webp",
         alt: "E-Commerce home page",

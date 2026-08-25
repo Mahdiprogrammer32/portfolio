@@ -20,72 +20,113 @@ export interface Project {
 }
 
 export const projects: Project[] = [
-  {
-    id: "artin-admin-kit",
-    title: "ARTIN Admin Kit",
-    category: "Enterprise SaaS / Admin Architecture",
-    description:
-      "A scalable and reusable enterprise admin foundation designed for building CRM, ERP, HRM, inventory, accounting and other business management systems.",
-    longDescription:
-      "Built from the ground up to solve the recurring need for a robust admin panel foundation. Instead of starting from scratch for each business application, ARTIN Admin Kit provides a production-ready base with authentication, authorization, role management and license control — all following secure architecture patterns.",
-    technologies: ["Laravel", "PHP", "MySQL", "Laravel Sanctum", "Spatie Permissions", "REST API"],
-    features: [
-      "Role-Based Access Control",
-      "Authentication & Authorization",
-      "License-Based Access",
-      "User & Role Management",
-      "Permission Management",
-      "REST API",
-      "Secure Architecture",
-      "Automated Testing",
-    ],
-    architecture: [
-      "Service-oriented backend architecture",
-      "Repository pattern for data access",
-      "API-first design with Sanctum tokens",
-      "Modular permission system via Spatie",
-    ],
-    security: [
-      "Sanctum token-based authentication",
-      "Role & permission-based authorization",
-      "Input validation and sanitization",
-      "CSRF protection on web routes",
-      "Rate limiting on API endpoints",
-    ],
-    images: [],
+{
+  id: "OnlineShop",
+
+  title: "Modern E-Commerce Platform",
+
+  category: "E-Commerce",
+
+  description:
+    "A modern and interactive e-commerce platform built with Next.js, React, and TypeScript, focused on performance, user experience, responsive design, and scalable frontend architecture.",
+
+  longDescription: [
+    "A modern and interactive e-commerce platform built with Next.js, React, and TypeScript, designed with a strong focus on user experience, performance, maintainability, and scalability.",
+
+    "The project implements a component-based frontend architecture with reusable UI components and a modular structure, making the application easier to maintain and extend.",
+
+    "The storefront provides core e-commerce functionality including product browsing, product details, categories, search, filtering, and shopping cart management.",
+
+    "The interface follows a responsive design approach to provide a consistent experience across desktop, tablet, and mobile devices.",
+
+    "TypeScript is used throughout the project to improve type safety, maintainability, and development reliability.",
+
+    "The architecture is also prepared for future integration with backend services and additional e-commerce capabilities such as authentication, order management, online payments, inventory management, favorites, and an administration panel.",
+
+    "This project demonstrates practical experience in building modern, scalable, and production-oriented web interfaces using the React and Next.js ecosystem.",
+  ],
+
+  technologies: [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "JavaScript",
+    "Tailwind CSS",
+    "HTML5",
+    "CSS3",
+    "Git",
+    "GitHub",
+  ],
+
+  features: [
+    "Product Listing",
+    "Product Details",
+    "Product Categories",
+    "Product Search",
+    "Product Filtering",
+    "Shopping Cart",
+    "Add to Cart",
+    "Remove from Cart",
+    "Cart Quantity Management",
+    "Cart Total Calculation",
+    "Responsive Design",
+    "Desktop, Tablet and Mobile Support",
+    "Modern Interactive UI",
+    "Reusable Components",
+    "Component-Based Architecture",
+    "Type-Safe Development with TypeScript",
+    "Optimized Next.js Pages",
+  ],
+
+  architecture: [
+    "Next.js App Router",
+    "React Component-Based Architecture",
+    "Reusable UI Components",
+    "TypeScript Type Safety",
+    "Modular Project Structure",
+    "Separation of UI and Application Logic",
+    "Responsive UI Architecture",
+    "Client-Side State Management",
+    "Reusable Layout Architecture",
+    "Scalable Frontend Structure",
+  ],
+
+  security: [
+    "TypeScript-Based Type Safety",
+    "Client-Side Input Validation",
+    "No Sensitive Credentials Stored in the Client",
+    "Secure Frontend Development Practices",
+    "Separation of UI Components and Application Logic",
+    "Environment-Based Configuration for Sensitive Values",
+  ],
+
+  images: [
+    {
+    src: "/projects/online-shop/homepage.png",
+    alt: "Modern E-Commerce Platform homepage",
+    caption: "Modern responsive e-commerce homepage",
   },
   {
-    id: "ecommerce-platform",
-    title: "Modern E-Commerce Platform",
-    category: "Full-Stack E-Commerce",
-    description:
-      "A modern full-stack e-commerce platform designed with a scalable backend architecture and responsive frontend.",
-    longDescription:
-      "A complete e-commerce solution covering product management, inventory tracking, shopping cart, pricing rules, and an admin panel. The architecture separates concerns clearly between the API layer, business logic, and presentation — making it maintainable and extensible.",
-    technologies: ["Laravel", "PHP", "MySQL", "Vite", "JavaScript", "Tailwind CSS"],
-    features: [
-      "Product & Category Management",
-      "User Management & Authentication",
-      "Shopping Cart & Checkout",
-      "Inventory & Stock Tracking",
-      "Product Pricing & Variants",
-      "Responsive UI",
-      "Admin Dashboard",
-      "Order Management",
-    ],
-    architecture: [
-      "MVC with clear separation of concerns",
-      "RESTful API for frontend consumption",
-      "Database normalization for data integrity",
-      "Component-based frontend with Vite",
-    ],
-    security: [
-      "Secure authentication flow",
-      "Input validation on all forms",
-      "Protected admin routes",
-      "SQL injection prevention",
-      "XSS protection",
-    ],
-    images: [],
+    src: "/projects/online-shop/homepagefull.png",
+    alt: "Homepage full screen page",
+    caption: "Home page full screen for demo",
   },
+  {
+    src: "/projects/online-shop/home1.webp",
+    alt: "home1 page",
+    caption: "page home 1",
+  },
+  {
+    src: "/projects/online-shop/home2.webp",
+    alt: "home2 page",
+    caption: "page home 2",
+  },
+  {
+    src: "/projects/online-shop/products.webp",
+    alt: "products page screen laptop",
+    caption: "Responsive laptop experience",
+  },
+  ],
+},
+  
 ];
